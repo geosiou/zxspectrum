@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title>ZX Spectrum tips!
+</title>
+
+
+</head>
+
+<body style="background-color:ivory">
+
+    <h1 style="text-align:center;color:black">WELCOME!!!</h1>
+    <h1 style="color:black">This is my page about various tips and info for the Sinclair ZX Spectrum computer</h1>
+ 
+ 
+ <p style="font-size:13px;font-family:verdana">I have found an interesting way to implement <span style="font-size:14px;color:red"><strong>2</strong></span> or even <span style="font-size:14px;color:red"><strong>3</strong></span> fire buttons (and even up to <span style="font-size:14px;color:red"><strong>10!!!</strong></span> - but more on this later!) support in games!!! </p>
+
+
+<p style="font-size:13px;font-family:verdana">First of all we need a joystick interface to provide support for that and then an easy way to make games take advantage of this feature since games were never designed to support more than 1 fire button...</p>
+
+<p style="font-size:15px;font-family:verdana">This joystick interface is the very versatile <strong>K-Mouse Turbo 2011</strong> from George Velesoft! It is both a joystick interface which does support up to <span style="font-size:14px;color:red"><strong>3</strong></span> fire buttons and a Kempston mouse compatible interface!</p>
+<hr>
+<h3 style="font-family:verdana"><u>MOUSE discription</u></h3>
+
+<p style="font-size:13px;font-family:verdana">As a Kempston mouse interface it gives you the option to connect an older Amiga mouse (both 2 and 3 buttons mice supported) with a DB9 connector or a modern PS/2 compatible where it supports the wheel too. Modern USB mice work too (with a USB to PS/2 adapter) as long as the USB mouse supports the PS/2 protocol.</p>
+
+<p style="font-size:13px;font-family:verdana">That 3rd mouse button / wheel support gives extra functions in comparison to the original Kempston mouse such as changing cursor speed setting and/or swapping left and right button function (and make Artist II work as Art Studio...).</p>
+<hr>
+<h3 style="font-family:verdana"><u>JOYSTICK discription</u></h3>
+
+<p style="font-size:13px;font-family:verdana">As a joystick interface it has a standard DB9 connector and supports 4 interface modes with 3 fire buttons each:</p>
+
+<h5 style="font-family:verdana">1. Kempston mode</h5>
+
+<h3 style="font-family:calibri">2. Sinclair ZX Interface 2 (port 1) <u>enhanced</u> mode - the standard 6, 7, 8, 9, 0, with <u>extra fire buttons</u> Z and X!</h3>
+
+<h5 style="font-family:verdana">All are sensed as keypresses by the computer:</h5>
+<img src="Sinclair.jpg" alt="Sinclair mode" width="370" height="200" style="margin-left:30px">
+
+<h5 style="font-family:verdana">3. Fuller mode</h5>
+
+<h5 style="font-family:verdana">4. Q, W, E, R, T, C, V mode. All are sensed as keypresses by the computer.</h5>
+<img src="QWERTCV.jpg" alt="QWERTCV mode" width="370" height="200" style="margin-left:30px">
+
+
+<p style="font-size:13px;font-family:verdana">The most interesting modes are 2 and 4 since the "movements" are sensed as keypresses. That way you can just use the game's "redefine keys" option and then move your joystick and press its fire buttons to register them to the corresponding keypresses. For modes 1 and 3 you would need modifications in game's code to read the extra 2 fire buttons (instructions are given in the K MOUSE TURBO 2011 manual)...</p>
+
+<p style="font-size:13px;font-family:verdana">The pinout of its joystick DB9 connector is the following:</p>
+
+<img src="Db9_joy_male.png" alt="Db9_joy_male" width="177" height="89" style="margin-left:15px;margin-right:40px">
+
+<img src="Db9_joy_female.png" alt="Db9_joy_female" width="177" height="89">
+
+
+
+
+
+<pre><p style="font-size:12px;font-family:verdana">              Male (interface)                        Female (joystick cable)</p></pre>
+
+<br>
+
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<body>
+
+ <table style="font-size:13px;font-family:verdana;margin-left: 110px">
+  <tr>
+    <th>Pin no.</th>
+    <th>Movement</th>
+
+  </tr>
+  <tr>
+    <td><center>1</td>
+    <td><center>Up</td>
+  </tr>
+
+  <tr>
+    <td><center>2</td>
+    <td><center>Down</td>
+  </tr>
+
+    <tr>
+    <td><center>3</td>
+    <td><center>Left</td>
+  </tr>
+
+    <tr>
+    <td><center>4</td>
+    <td><center>Right</td>
+  </tr>
+
+   <tr>
+    <td><center>5</td>
+    <td style="color:red"><b><center>Fire 3</b></td>
+  </tr>
+
+    <tr>
+    <td><center>6</td>
+    <td><center>Fire 1</td>
+  </tr>
+
+    <tr>
+    <td><center>7</td>
+    <td><center> +5v</td>
+  </tr>
+
+    <tr>
+    <td><center>8</td>
+    <td><center>Ground</td>
+  </tr>
+
+    <tr>
+    <td><center>9</td>
+    <td style="color:red"><b><center>Fire 2</b></td>
+  </tr>
+
+</table>
+
+
+<br>
+
+<p style="font-size:13px;font-family:verdana">If you are wiring a custom made joystick/joypad or modifying a ready made one, the above table is all you need!</p>
+
+<p style="font-size:13px;font-family:verdana">Ready made joysticks/joypads which support <span style="font-size:14px;color:red"><strong>2</strong></span> fire buttons <u>without modifications</u> are:</p>
+
+<ul style="font-size:13px;font-family:verdana">
+  <li><a href="Sega_Master_System.jpg">SEGA MASTER SYSTEM controller</a>. A safe and ready solution with Fire 1 & Fire 2 buttons!</li>
+  <br>
+  <li> The <a href="Sega_Genesis_3Button.jpg">SEGA GENESIS / MEGA DRIVE 3 button controller</a> can also be used and it defaults the Fire 1 in its B button and the Fire 2 in its C button. Some say that it is dangerous to use a SEGA GENESIS/MEGA DRIVE with an retro computer (it does destroy Commodores), but as far as ZX Spectrum is concerned it is a matter of the joystick interface used, if it can handle the voltage that SEGA GENESIS/MEGA DRIVE returns to it and <i><u>I think</u></i> K-MOUSE TURBO 2011 can handle it well.</li>
+ </ul>
+
+<p style="font-size:13px;font-family:verdana">Ready made joystick/joypad which, will support <span style="font-size:14px;color:red"><strong>3</strong></span> fire buttons <u>with modifications</u>, are:
+<ul style="font-size:13px;font-family:verdana">
+  <li>The new <a href="https://icomp.de/shop-icomp/en/shop/product/competition-pro-retro.html">Competition PRO Retro</a> which can be modified with help of the official <a href="http://wiki.icomp.de/wiki/DB9-Joystick#2.2F3_Button_modification">instructions</a>.</li>
+  <br>
+  <li> The mentioned before<a href="Sega_Genesis_3Button.jpg"> SEGA GENESIS / MEGA DRIVE</a> 3 button controller, with the re-wiring instructions I'm giving below, which will also disable its logic chip inside to make sure it is <u>completely</u> safe with K-MOUSE TURBO 2011 and ZX Spectrum:</li>
+ </ul>
+
+
+<p style="font-size:13px;font-family:verdana">The specific model I modified is the <a href="https://segaretro.org/Control_Pad_%28Mega_Drive%29">MK-1650</a> one.</p>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
